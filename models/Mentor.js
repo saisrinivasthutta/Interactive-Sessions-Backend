@@ -2,7 +2,7 @@ const db = require("../db");
 
 const Mentor = function (mentor) {
   this.name = mentor.name;
-  this.availability = mentor.availability; // Array of available time slots
+  this.availability = mentor.availability;
 };
 
 Mentor.create = (newMentor, result) => {
@@ -65,7 +65,6 @@ Mentor.findAvailableMentors = (scheduleTime, result) => {
       return;
     }
 
-    // Filter mentors who are available at the given time
     const availableMentors = res.filter((mentor) => {
       try {
         const availability = JSON.parse(mentor.availability);
@@ -92,7 +91,6 @@ Mentor.findByExpertise = (expertiseId, result) => {
         return;
       }
       if (res.length) {
-        // Parse availability JSON to array for each mentor
         res.forEach((mentor) => {
           try {
             mentor.availability = JSON.parse(mentor.availability);

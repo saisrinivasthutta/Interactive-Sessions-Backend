@@ -40,7 +40,6 @@ exports.scheduleSession = async (req, res) => {
   const updatedAvailability = mentor.availability
     .filter((slot) => {
       if (slot.startTime <= scheduleTime && slot.endTime > scheduleTime) {
-        // Remove the booked slot and adjust the remaining slots
         const start = slot.startTime;
         const end = slot.endTime;
         const bookedEnd = new Date(scheduleTime);
@@ -52,11 +51,11 @@ exports.scheduleSession = async (req, res) => {
         if (bookedEnd < end) {
           return { startTime: bookedEnd, endTime: end };
         }
-        return null; // Slot is fully booked
+        return null;
       }
-      return slot; // Slot is not affected
+      return slot;
     })
-    .filter((slot) => slot !== null); // Remove null slots
+    .filter((slot) => slot !== null);
 
   await new Promise((resolve, reject) => {
     Mentor.updateAvailability(mentor.id, updatedAvailability, (err, data) => {
@@ -100,7 +99,6 @@ exports.getAvailableMentors = async (req, res) => {
     });
   });
 
-  // Filter mentors who are available at the given time
   const filteredMentors = availableMentors.filter((mentor) => {
     try {
       const availability = mentor.availability;

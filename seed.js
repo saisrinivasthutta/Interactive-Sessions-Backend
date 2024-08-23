@@ -225,58 +225,58 @@ const expertises = [
 ];
 
 const mentorExpertises = [
-  { mentorId: 1, expertiseId: 1 }, // Alice - Finance
-  { mentorId: 1, expertiseId: 4 }, // Alice - Strategic Management
-  { mentorId: 2, expertiseId: 2 }, // Bob - Marketing
-  { mentorId: 2, expertiseId: 5 }, // Bob - Human Resources
-  { mentorId: 3, expertiseId: 3 }, // Charlie - Operations Management
-  { mentorId: 3, expertiseId: 6 }, // Charlie - International Business
-  { mentorId: 4, expertiseId: 7 }, // David - Entrepreneurship
-  { mentorId: 4, expertiseId: 8 }, // David - Information Technology
-  { mentorId: 5, expertiseId: 9 }, // Eve - Supply Chain Management
-  { mentorId: 5, expertiseId: 10 }, // Eve - Business Analytics
-  { mentorId: 6, expertiseId: 11 }, // Frank - Leadership
-  { mentorId: 6, expertiseId: 12 }, // Frank - Corporate Governance
-  { mentorId: 7, expertiseId: 13 }, // Grace - Project Management
-  { mentorId: 7, expertiseId: 14 }, // Grace - Digital Marketing
-  { mentorId: 8, expertiseId: 15 }, // Heidi - E-commerce
-  { mentorId: 8, expertiseId: 16 }, // Heidi - Data Science
-  { mentorId: 9, expertiseId: 17 }, // Ivan - Cybersecurity
-  { mentorId: 9, expertiseId: 18 }, // Ivan - Sustainability
-  { mentorId: 10, expertiseId: 19 }, // Judy - Healthcare Management
-  { mentorId: 10, expertiseId: 1 }, // Judy - Finance
-  { mentorId: 11, expertiseId: 2 }, // Kevin - Marketing
-  { mentorId: 11, expertiseId: 3 }, // Kevin - Operations Management
-  { mentorId: 12, expertiseId: 4 }, // Laura - Strategic Management
-  { mentorId: 12, expertiseId: 5 }, // Laura - Human Resources
-  { mentorId: 13, expertiseId: 6 }, // Mike - International Business
-  { mentorId: 13, expertiseId: 7 }, // Mike - Entrepreneurship
-  { mentorId: 14, expertiseId: 8 }, // Nina - Information Technology
-  { mentorId: 14, expertiseId: 9 }, // Nina - Supply Chain Management
-  { mentorId: 15, expertiseId: 10 }, // Oliver - Business Analytics
-  { mentorId: 15, expertiseId: 11 }, // Oliver - Leadership
-  { mentorId: 16, expertiseId: 12 }, // Patty - Corporate Governance
-  { mentorId: 16, expertiseId: 13 }, // Patty - Project Management
-  { mentorId: 17, expertiseId: 14 }, // Quinn - Digital Marketing
-  { mentorId: 17, expertiseId: 15 }, // Quinn - E-commerce
-  { mentorId: 18, expertiseId: 16 }, // Riley - Data Science
-  { mentorId: 18, expertiseId: 17 }, // Riley - Cybersecurity
-  { mentorId: 19, expertiseId: 18 }, // Sam - Sustainability
-  { mentorId: 19, expertiseId: 19 }, // Sam - Healthcare Management
-  { mentorId: 20, expertiseId: 1 }, // Tina - Finance
-  { mentorId: 20, expertiseId: 2 }, // Tina - Marketing
-  { mentorId: 21, expertiseId: 3 }, // Ursula - Operations Management
-  { mentorId: 21, expertiseId: 4 }, // Ursula - Strategic Management
-  { mentorId: 22, expertiseId: 5 }, // Victor - Human Resources
-  { mentorId: 22, expertiseId: 6 }, // Victor - International Business
-  { mentorId: 23, expertiseId: 7 }, // Wendy - Entrepreneurship
-  { mentorId: 23, expertiseId: 8 }, // Wendy - Information Technology
-  { mentorId: 24, expertiseId: 9 }, // Xavier - Supply Chain Management
-  { mentorId: 24, expertiseId: 10 }, // Xavier - Business Analytics
-  { mentorId: 25, expertiseId: 11 }, // Yvonne - Leadership
-  { mentorId: 25, expertiseId: 12 }, // Yvonne - Corporate Governance
-  { mentorId: 26, expertiseId: 13 }, // Zoe - Project Management
-  { mentorId: 26, expertiseId: 14 }, // Zoe - Digital Marketing
+  { mentorId: 1, expertiseId: 1 },
+  { mentorId: 1, expertiseId: 4 },
+  { mentorId: 2, expertiseId: 2 },
+  { mentorId: 2, expertiseId: 5 },
+  { mentorId: 3, expertiseId: 3 },
+  { mentorId: 3, expertiseId: 6 },
+  { mentorId: 4, expertiseId: 7 },
+  { mentorId: 4, expertiseId: 8 },
+  { mentorId: 5, expertiseId: 9 },
+  { mentorId: 5, expertiseId: 10 },
+  { mentorId: 6, expertiseId: 11 },
+  { mentorId: 6, expertiseId: 12 },
+  { mentorId: 7, expertiseId: 13 },
+  { mentorId: 7, expertiseId: 14 },
+  { mentorId: 8, expertiseId: 15 },
+  { mentorId: 8, expertiseId: 16 },
+  { mentorId: 9, expertiseId: 17 },
+  { mentorId: 9, expertiseId: 18 },
+  { mentorId: 10, expertiseId: 19 },
+  { mentorId: 10, expertiseId: 1 },
+  { mentorId: 11, expertiseId: 2 },
+  { mentorId: 11, expertiseId: 3 },
+  { mentorId: 12, expertiseId: 4 },
+  { mentorId: 12, expertiseId: 5 },
+  { mentorId: 13, expertiseId: 6 },
+  { mentorId: 13, expertiseId: 7 },
+  { mentorId: 14, expertiseId: 8 },
+  { mentorId: 14, expertiseId: 9 },
+  { mentorId: 15, expertiseId: 10 },
+  { mentorId: 15, expertiseId: 11 },
+  { mentorId: 16, expertiseId: 12 },
+  { mentorId: 16, expertiseId: 13 },
+  { mentorId: 17, expertiseId: 14 },
+  { mentorId: 17, expertiseId: 15 },
+  { mentorId: 18, expertiseId: 16 },
+  { mentorId: 18, expertiseId: 17 },
+  { mentorId: 19, expertiseId: 18 },
+  { mentorId: 19, expertiseId: 19 },
+  { mentorId: 20, expertiseId: 1 },
+  { mentorId: 20, expertiseId: 2 },
+  { mentorId: 21, expertiseId: 3 },
+  { mentorId: 21, expertiseId: 4 },
+  { mentorId: 22, expertiseId: 5 },
+  { mentorId: 22, expertiseId: 6 },
+  { mentorId: 23, expertiseId: 7 },
+  { mentorId: 23, expertiseId: 8 },
+  { mentorId: 24, expertiseId: 9 },
+  { mentorId: 24, expertiseId: 10 },
+  { mentorId: 25, expertiseId: 11 },
+  { mentorId: 25, expertiseId: 12 },
+  { mentorId: 26, expertiseId: 13 },
+  { mentorId: 26, expertiseId: 14 },
 ];
 
 // Insert mentors into the database
