@@ -4,7 +4,11 @@ const cors = require("cors");
 const schedulerRoutes = require("./routes/schedulerRoutes");
 
 const app = express();
-app.use(cors()); // Enable CORS for all routes
+app.use(
+  cors({
+    origin: "*",
+  })
+); // Enable CORS for all routes
 app.use(bodyParser.json());
 
 app.use("/api/scheduler", schedulerRoutes);
